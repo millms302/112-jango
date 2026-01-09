@@ -1,0 +1,41 @@
+Django: High level python web framework that encourages rapid 
+        development and clean, pragmatic design. Built by experienced 
+        developers, it takes care of the hassle of web development, so 
+        you can focus on writing your app without needing to reinvent 
+        the wheel.
+
+What can Django do?
+    -Minimize coding time.
+    -You'll be able to access a built-in admin interface as soon as 
+     you implement a model (database).
+    -You'll be released form SQL coding. You can still use it, but it
+     is not needed.
+
+Why Python/Django?
+    -ridiculously fast
+    -fully loaded
+    -Reassuringly secure
+    -Exceedingly scalable
+    -Incredibly versatile
+
+MVT: Model. View. Template
+    Model: Your Data Structure (database)
+        -Handles data structure through interacting with a database.
+        -moves Objects(data) into the view.
+        -recieves functions CREATE UPDATE and DELETE from the view.
+        -written in python in a model.py file.
+    View: Business Logic (logic)
+        -Sends functions CREATE, UPDATE and DELETE to the Model.
+        -Filters data from the model for a specific page. Generally
+         written in python
+    Template:
+
+    Basic Structure:
+        User->Browser-->HTTP requests-->urls.py-->views.py-->forms.py-->views.py--> 
+                         HTTP response-->Web Browser-->User
+                        Note: views.py can send and receive from models.py and templates.
+                        Note: models.py sends and recives from the database.
+                        Note: Templates stores the HTML document templates.
+
+
+---END OF SESSION 1 NOTES---

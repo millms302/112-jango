@@ -6,9 +6,16 @@
 
 {% block content %} <!--boostrap/card/second option-->
     <div class="container">
-        <h1>Posts</h1>
         {% for item in posts %}
-            <h2>{{item.title}}</h2>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{item.created_on}}</li>
+                        <li class="list-group-item">{{item.author}}</li>
+                    </ul>
+                </div>
+            </div>
             <a href="{% url 'post_detail' item.id %}">Continue Reading</a>
         {% endfor %}
     </div>

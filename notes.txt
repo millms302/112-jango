@@ -39,3 +39,5 @@ MVT: Model. View. Template
 
 
 ---END OF SESSION 1 NOTES---
+
+---113 day 1 Notes---

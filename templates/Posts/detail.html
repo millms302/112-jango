@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Detail View - {{single.post.title}}
+{% endblock %}
+
+{% block content %}
+    <h1>Post #{{single_post.id}}</h1>
+    <h2>{{single_post.title}}</h2>
+    <h5>{{single_post.subtitle}}</h5>
+    <strong>Created On: {{single_post.created_on}}</strong>
+    <p>{{single_post.body}}</p>
+    <p>{{single_post.author}}</p>
+    <br>
+    <a href="#" class="btn btn-primary">Edit</a>
+    <a href="#" class="btn btn-danger">Delete</a>
+{% endblock %}
